@@ -37,7 +37,7 @@ def setValue(val):
 
 
 while 1:
-    key = requests.get('http://192.168.49.15:8000/api/note')
+    key = requests.get('http://0.0.0.0:8000/api/note')
 
     if GPIO.input(MAGNET_GPIO) == 1:
         if (key):
