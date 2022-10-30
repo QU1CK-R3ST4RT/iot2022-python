@@ -10,7 +10,7 @@ GPIO.setup(2, GPIO.OUT)
 p = GPIO.PWM(2, 200)
 p.start(70)
 
-firstnoteKey = requests.get('http://192.168.49.15:8000/api/note')
+firstnoteKey = requests.get('http://0.0.0.0:8000/api/note')
 firstnoteData = firstnoteKey.json()
 note = firstnoteData['name']
 
